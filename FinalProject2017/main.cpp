@@ -1,4 +1,4 @@
-  /*FInal Project code practice and possible layout for submittion for grade. looking to put in a UML for interface and design. Needs a topic for the total idea:
+  /* Final Project code practice and possible layout for submittion for grade. looking to put in a UML for interface and design. Needs a topic for the total idea:
 	IDEAS FOR THE PROJECT SO FAR:
 	1) Racing game with money and storage along with the ability to upgrade car
 	2) Class type game where the user picks a life story and goes on a journey to collect differnt things and make a mark on the world
