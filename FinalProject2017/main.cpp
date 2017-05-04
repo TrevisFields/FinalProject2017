@@ -21,6 +21,7 @@ void DisplayWelcomeMessage();
 void DisplayClosingMessage();
 void PressEnter();
 void SwitchStatementNested();
+void MenuScreen();
 
 int main()
 {//Program Start
@@ -35,13 +36,11 @@ int main()
   system("read");
   
   //Display Welcome Message to the begining of the main part of the program
-  DisplayWelcomeMessage();
-  cout << "MENU:\n" << endl;
-  cout << "1) NEW GAME\n" << endl;
-  cout << "2) CONTINUE\n" << endl;
-  cout << "3) DELETE\n" << endl;
+  //DO-WHILE LOOP
+  do{ // ---> DELETE CODE LINE 
+		DisplayWelcomeMessage();
+  MenuScreen();
   
-  cout << "[PLEASE SELECT AN OPTION]\n";
   
   //Begining of switch statment (number) and its declaration
   int number;
@@ -90,7 +89,17 @@ int main()
 		cout << "INVALID CHOICE PLEASE ENTER IN YES [Y] OR NO [N] TO CONTINUE.\n";
   }
   //End of switch statement (choice)
+  if(choice == 'y')
+	 {
+		DisplayWelcomeMessage();
+		MenuScreen();
+	 }
+  else
+  {
+	 return EXIT_SUCCESS;
+  }
   
+		}while(number != 0);// ---> DELETE CODE LINE
   system("read");
   cout << "The line below this is the destructor.\n";//CLOSING MESSAGE FOR THE DESTRUCTOR TO DISPLAY BEFORE THIS LINE
   return 0;
@@ -114,7 +123,7 @@ void DisplayClosingMessage()
 
 void PressEnter()
 {
-  cout << "Press Enter to Continue." << endl;
+  cout << "Please Press Enter to Continue." << endl;
 }
 
 void SwitchStatementNested()
@@ -137,4 +146,37 @@ void SwitchStatementNested()
 		cout << "PLEASE SELECT A VALID OPTION.\n";
 		
   }
+}
+
+void MenuScreen()
+{
+  cout << "MENU:\n";
+  cout << "1) NEW GAME\n";
+  cout << "2) CONTINUE\n";
+  cout << "3) DELETE\n";
+  cout << "********************" << endl;
+  cout << "[PLEASE SELECT AN OPTION]\n";
+	 //Begining of switch statment (number) and its declaration
+  int number;
+  cin >> number;
+  switch(number)
+  {
+		case 1:
+		cout << "****** WARNING ******" << endl;
+		cout << "You are about to begin a new game." << endl;
+		cout << "All previous data will be over written." << endl;
+		cout << "Are you sure you want to continue?\n";
+		SwitchStatementNested();
+		break;
+		case 2:
+		cout << "This is case 2.\n";
+		break;
+		case 3:
+		cout << "This is case 3.\n";
+		break;
+		default:
+		cout << "INVALID SELECTION.\n";
+		
+  }
+  //end of switch statement (number)
 }
