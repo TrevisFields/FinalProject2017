@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E0C13991EC6E51F00F332CE /* FinalProjectDisclaimerMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E0C13971EC6E51F00F332CE /* FinalProjectDisclaimerMessage.cpp */; };
 		6E8A205D1EB1017A00EFEBD8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E8A205C1EB1017A00EFEBD8 /* main.cpp */; };
 		6E8A20651EB1E50500EFEBD8 /* TestMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E8A20641EB1E50500EFEBD8 /* TestMessage.cpp */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6E0C13961EC6E46A00F332CE /* FinalProjectDIsclaimerMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FinalProjectDIsclaimerMessage.h; sourceTree = "<group>"; };
+		6E0C13971EC6E51F00F332CE /* FinalProjectDisclaimerMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FinalProjectDisclaimerMessage.cpp; sourceTree = "<group>"; };
 		6E8A20591EB1017A00EFEBD8 /* FinalProject2017 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FinalProject2017; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E8A205C1EB1017A00EFEBD8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		6E8A20631EB1E48000EFEBD8 /* TestMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestMessage.h; sourceTree = "<group>"; };
@@ -63,6 +66,8 @@
 				6E8A205C1EB1017A00EFEBD8 /* main.cpp */,
 				6E8A20631EB1E48000EFEBD8 /* TestMessage.h */,
 				6E8A20641EB1E50500EFEBD8 /* TestMessage.cpp */,
+				6E0C13961EC6E46A00F332CE /* FinalProjectDIsclaimerMessage.h */,
+				6E0C13971EC6E51F00F332CE /* FinalProjectDisclaimerMessage.cpp */,
 			);
 			path = FinalProject2017;
 			sourceTree = "<group>";
@@ -126,6 +131,7 @@
 			files = (
 				6E8A205D1EB1017A00EFEBD8 /* main.cpp in Sources */,
 				6E8A20651EB1E50500EFEBD8 /* TestMessage.cpp in Sources */,
+				6E0C13991EC6E51F00F332CE /* FinalProjectDisclaimerMessage.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +260,7 @@
 				6E8A20621EB1017A00EFEBD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -12,6 +12,7 @@
 	
 	***!!!!!! MYLES IF YOU SEE THIS STUFF ADD YOUR IDEAS TO IT SO THAT THERE CAN BE SOME MORE IDEAS FLOWING THROUGH YOUR HEAD AS THE TIME COMES WHEN WE CAN WORK ON THE PROJECT.
 	*/
+#include "FinalProjectDIsclaimerMessage.h"
 #include "TestMessage.h"
 #include <iostream>
 
@@ -25,20 +26,24 @@ void MenuScreen();
 
 int main()
 {//Program Start
- //Call the constructor to the program and then display the welcome message to the user.
+ // DELETE THIS CODE AFTER THIS FIRST TEST RUN
+  FinalProjectDisclaimerMessage DisclaimerMessage;
+   //Press Enter to Continue
+  PressEnter();
+  // --> Press enter to display next set of constructors
+  getchar();
+  //Call the constructor to the program and then display the welcome message to the user.
   TestMessage testMessage;
   cout << "The line above this one is the constructor.\n";
-  //Press Enter to Continue
-  PressEnter();
+
   
   //Display all of the non important information that the user might need to know before using the program like the code being written on a mac and needing to use Terminal to do things like:
   // -> clear the screen (with out seeing command errors, or go in to the code and change a few coding spots to allow for things to run more smoothly.
   system("read");
   
   //Display Welcome Message to the begining of the main part of the program
-  //DO-WHILE LOOP
-  do{ // ---> DELETE CODE LINE 
-		DisplayWelcomeMessage();
+  
+  DisplayWelcomeMessage();
   MenuScreen();
   
   
@@ -99,7 +104,7 @@ int main()
 	 return EXIT_SUCCESS;
   }
   
-		}while(number != 0);// ---> DELETE CODE LINE
+		
   system("read");
   cout << "The line below this is the destructor.\n";//CLOSING MESSAGE FOR THE DESTRUCTOR TO DISPLAY BEFORE THIS LINE
   return 0;
@@ -180,3 +185,10 @@ void MenuScreen()
   }
   //end of switch statement (number)
 }
+
+/*
+ ******* THINGS TO ADD ******
+ TRY CATCH 
+ POINTERS
+ 
+ */
